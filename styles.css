@@ -1,7 +1,10 @@
 :root {
     --line-width: 1%;
     --box-size: 30%;
-    --card-size: 90%
+    --card-size: 90%;
+    --board-color: #adadad;
+    --square-color: #adadad;
+    --select-delay: 0.2s;
 }
 
 body {
@@ -24,7 +27,7 @@ body {
     border-radius: 25px;
     width: var(--card-size);
     height: var(--card-size);
-    background-color: #adadad;
+    background-color: var(--board-color);
     border-color: white;
     border-width: 10px;
     border-style: solid;
@@ -52,25 +55,41 @@ body {
     flex-direction: row;
 }
 
-.box {
+.square {
     height: 100%;
     width: var(--box-size);
     border-style: solid;
     border-width: 5px;
+    cursor: pointer;
+    background-color: var(--square-color);
+    transition: background-color var(--select-delay) ease;
+
+}
+
+.clicked-square {
+    background-color: #737373 !important;
 }
 
 .top {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
     border-top: 0;
 }
 
 .right {
     border-left: 0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 
 .left {
     border-right: 0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .bottom {
     border-bottom: 0;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
