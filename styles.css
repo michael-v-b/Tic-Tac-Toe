@@ -63,6 +63,23 @@ body {
     cursor: pointer;
     background-color: var(--square-color);
     transition: background-color var(--select-delay) ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.filled-square {
+    height: 100%;
+    width: var(--box-size);
+    border-style: solid;
+    border-width: 5px;
+    cursor: pointer;
+    background-color: var(--square-color);
+    transition: background-color var(--select-delay) ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -92,4 +109,10 @@ body {
     border-bottom: 0;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+}
+
+
+.board-image {
+    height: 100%;
+    width: auto;
 }
