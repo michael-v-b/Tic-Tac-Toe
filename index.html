@@ -8,27 +8,43 @@
     </head>
     <body>
         <script src = "main.js"></script>
-        <div class = "wrapper">
-            <div class = "card">
-                <div class = "board">
-                    <div class = "row" id = "top-row">
-                        <div class = "square top right" id = 'tr'>
+        <div class = "background-wrapper">
+            <div class = 'bg' id = 'x-bg'>
+            </div>
+            <div class = "central-wrapper">
+                <div class = "card">
+                    <div class = "board">
+                        <div class = "row" id = "top-row">
+                            <div class = "square top right" id = 'tr'>
+                            </div>
+                            <div class = "square top center" id = 'tc'></div>
+                            <div class = "square top left" id = 'tl'></div>
                         </div>
-                        <div class = "square top center" id = 'tc'></div>
-                        <div class = "square top left" id = 'tl'></div>
+                        <div class = "row" id = "middle-row">
+                            <div class = "square middle right"></div>
+                            <div class = "square middle center"></div>
+                            <div class = "square middle left"></div>
+                        </div>
+                        <div class = "row" id = "bottom-row">
+                            <div class = "square bottom right"></div>
+                            <div class = "square bottom center"></div>
+                            <div class = "square bottom left"></div>
+                        </div>
                     </div>
-                    <div class = "row" id = "middle-row">
-                        <div class = "square middle right"></div>
-                        <div class = "square middle center"></div>
-                        <div class = "square middle left"></div>
+                </div>
+                <div class = "team-wrapper">
+                    <div class = "team" id = 'x'>
+                        Team X:
                     </div>
-                    <div class = "row" id = "bottom-row">
-                        <div class = "square bottom right"></div>
-                        <div class = "square bottom center"></div>
-                        <div class = "square bottom left"></div>
+                    <div class = "team" id = 'o'>
+                        Team O:
                     </div>
                 </div>
             </div>
-    </div>
+            <div class = 'bg' id = 'o-bg'>
+            </div>
+        </div>
+
+
     </body>
 </html>

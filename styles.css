@@ -1,7 +1,7 @@
 :root {
     --line-width: 1%;
     --box-size: 30%;
-    --card-size: 90%;
+    --card-size: 500px;
     --board-color: #adadad;
     --square-color: #adadad;
     --select-delay: 0.2s;
@@ -15,13 +15,36 @@ body {
     background-color: #d8d5d5;
 }
 
-.wrapper {
+.bg {
+    height: 500px;
+    width: 500px;
+}
+
+#big-x {
+    background-image: url(images/x.png);
+}
+
+#big-x {
+    background-image: url(images/o.png);
+}
+
+
+.background-wrapper {
     display: flex;
+    flex-direction: row;
+}
+
+.central-wrapper {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
     width: 50vw;
 }
+
+
+
 
 .card {
     border-radius: 25px;
@@ -34,6 +57,28 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 25px;
+}
+
+.team-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    width: 80%;
+    border-radius: 25px;
+    background-color: #b2b2b2;
+    border-width: 10px;
+    border-color: white;
+    border-style: solid;
+}
+
+.team {
+    padding: 100px;
+    font-size: xx-large;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .board {
